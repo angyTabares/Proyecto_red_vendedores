@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistas.VentanaTiendaController">
+   <children>
+      <BorderPane layoutX="182.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="72.0" prefWidth="600.0" style="-fx-background-color: #05011B;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 20; -fx-text-fill: white;" text="Mercado" />
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="109.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="269.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="10.0" prefWidth="331.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="170.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="25.0" prefWidth="77.0" style="-fx-font-size: 16;" text="Filtar Por" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="comboFiltro" prefWidth="150.0" style="-fx-background-color: white; -fx-border-color: Black;" GridPane.columnIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="80.0" />
+                     </GridPane.margin>
+                  </ComboBox>
+                  <Label fx:id="lblTipoFiltro" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Filtro" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </center>
+         <bottom>
+            <ListView fx:id="listProductos" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="HORIZONTAL" prefHeight="247.0" prefWidth="570.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="15.0" right="15.0" />
+               </BorderPane.margin>
+            </ListView>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="center" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="678.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistas.VentanaEstadisticasController">
+   <children>
+      <Label layoutX="23.0" layoutY="14.0" text="Cantidad de Productos">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="119.0" prefHeight="5.0" prefWidth="654.0" />
+      <Label layoutX="23.0" layoutY="45.0" text="Publicados en determinada fecha">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="fecha" layoutX="23.0" layoutY="75.0" prefHeight="27.0" prefWidth="174.0" style="-fx-background-color: White; -fx-border-color: Black;" />
+      <TextField fx:id="numeroPorFecha" layoutX="213.0" layoutY="75.0" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <TextField fx:id="numeroPorUsuario" layoutX="572.0" layoutY="76.0" prefHeight="27.0" prefWidth="51.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Label layoutX="328.0" layoutY="45.0" text="Publicados por un Usuario">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="129.0" text="Mensaje enviados entre usuarios">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="mensajesEnviados" layoutX="12.0" layoutY="156.0" prefHeight="81.0" prefWidth="654.0" style="-fx-border-color: black;">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <Label layoutX="18.0" layoutY="249.0" text="Top 10 de Productos con mas Me Gusta">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="top10" layoutX="14.0" layoutY="277.0" prefHeight="81.0" prefWidth="654.0" style="-fx-border-color: black;">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <Label layoutX="18.0" layoutY="368.0" text="Cantidad de Contactos por cada Vendedor">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="cantidadContactos" layoutX="14.0" layoutY="396.0" prefHeight="81.0" prefWidth="654.0" style="-fx-border-color: black;">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <Button fx:id="buscar" layoutX="513.0" layoutY="76.0" mnemonicParsing="false" onAction="#cantidadProductosVendedor" style="-fx-background-color: #05011B; -fx-text-fill: white;" text="Buscar" />
+   </children>
+</AnchorPane>

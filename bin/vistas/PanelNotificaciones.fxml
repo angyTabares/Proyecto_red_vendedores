@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="350.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistas.PanelNotificacionesController">
+   <children>
+      <ImageView fx:id="imageNotificacion" fitHeight="58.0" fitWidth="72.0" layoutX="25.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblNotificacion" alignment="TOP_LEFT" layoutX="122.0" layoutY="26.0" prefHeight="99.0" prefWidth="200.0" text="Notificacion" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

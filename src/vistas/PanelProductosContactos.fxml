@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="279.0" style="-fx-border-color: Black; -fx-background-color: White;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistas.PanelProductosContactosController">
+   <top>
+      <HBox prefHeight="40.0" prefWidth="289.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="46.0" prefWidth="307.0" style="-fx-background-color: White;">
+               <children>
+                  <GridPane prefHeight="46.0" prefWidth="292.0" style="-fx-background-color: white;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="117.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="172.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="lblContacto" style="-fx-font-size: 16; -fx-font-style: italic;" text="Contacto">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="lblFecha" style="-fx-font-size: 16; -fx-font-style: italic;" text="Fecha" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="53.0" prefWidth="289.0" style="-fx-background-color: White;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="53.0" prefWidth="294.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="17.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="btnLikes" fitHeight="37.0" fitWidth="49.0" onMouseClicked="#darLike" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@../Imagener/corazon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblCantLikes" contentDisplay="CENTER" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Label fx:id="lblCantComentarios" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <ImageView fx:id="btnComentario" fitHeight="37.0" fitWidth="49.0" onMouseClicked="#dejarComentario" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@../Imagener/burbuja-de-dialogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: White;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblNombre" alignment="CENTER" layoutX="24.0" layoutY="26.0" style="-fx-font-size: 16;" text="Nombre" />
+            <Button fx:id="btnVerDetalles" layoutX="164.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#verDetalles" style="-fx-background-color: #F1C40F; -fx-border-color: Black;" text="Ver Detalles" />
+            <Separator layoutX="14.0" layoutY="8.0" prefHeight="1.0" prefWidth="256.0" />
+            <Separator layoutX="15.0" layoutY="64.0" prefHeight="1.0" prefWidth="256.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

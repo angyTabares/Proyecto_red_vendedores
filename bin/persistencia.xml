@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_111" class="java.beans.XMLDecoder">
+ <object class="logica.Red" id="Red0">
+  <void id="Grafo0" property="red">
+   <void property="grafo">
+    <void method="put">
+     <object class="logica.Vendedor" id="Vendedor0">
+      <void property="arbolProductos">
+       <object class="estructuras.ArbolBinario">
+        <void property="peso">
+         <int>1</int>
+        </void>
+        <void property="raiz">
+         <object class="estructuras.NodoGenerico">
+          <void property="elemento">
+           <object class="logica.Producto">
+            <void property="categoria">
+             <string>Fruta</string>
+            </void>
+            <void property="comentarios">
+             <object class="estructuras.ListaEnlazada"/>
+            </void>
+            <void property="dueño">
+             <object idref="Vendedor0"/>
+            </void>
+            <void property="fecha">
+             <string>2020-11-24</string>
+            </void>
+            <void property="hora">
+             <string>10:35:56</string>
+            </void>
+            <void property="meGusta">
+             <object class="estructuras.ListaEnlazada">
+              <void property="actual">
+               <object class="estructuras.NodoLista" id="NodoLista0">
+                <void property="dato">
+                 <object class="logica.Vendedor" id="Vendedor1">
+                  <void property="arbolProductos">
+                   <object class="estructuras.ArbolBinario"/>
+                  </void>
+                  <void property="correo">
+                   <string>juan123</string>
+                  </void>
+                  <void property="direccion">
+                   <string>barrio</string>
+                  </void>
+                  <void property="mensajes">
+                   <object class="estructuras.ListaEnlazada">
+                    <void property="actual">
+                     <object class="estructuras.NodoLista" id="NodoLista1">
+                      <void property="dato">
+                       <object class="logica.MensajeYComentario">
+                        <void property="texto">
+                         <string>hola</string>
+                        </void>
+                        <void property="vendedor">
+                         <object idref="Vendedor0"/>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                    <void property="longitud">
+                     <int>1</int>
+                    </void>
+                    <void property="primero">
+                     <object idref="NodoLista1"/>
+                    </void>
+                    <void property="ultimo">
+                     <object idref="NodoLista1"/>
+                    </void>
+                   </object>
+                  </void>
+                  <void property="nombre">
+                   <string>juan</string>
+                  </void>
+                  <void property="telefono">
+                   <string>123</string>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void property="longitud">
+               <int>1</int>
+              </void>
+              <void property="primero">
+               <object idref="NodoLista0"/>
+              </void>
+              <void property="ultimo">
+               <object idref="NodoLista0"/>
+              </void>
+             </object>
+            </void>
+            <void property="nombre">
+             <string>Manzana</string>
+            </void>
+            <void property="precio">
+             <double>2000.0</double>
+            </void>
+           </object>
+          </void>
+          <void property="enlaces">
+           <object class="java.util.ArrayList">
+            <void method="add">
+             <null/>
+            </void>
+            <void method="add">
+             <null/>
+            </void>
+            <void method="add">
+             <null/>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void property="correo">
+       <string>angy@Gmail.com</string>
+      </void>
+      <void property="direccion">
+       <string>Cra 30 30 30</string>
+      </void>
+      <void property="mensajes">
+       <object class="estructuras.ListaEnlazada">
+        <void property="actual">
+         <object class="estructuras.NodoLista" id="NodoLista2">
+          <void property="dato">
+           <object class="logica.MensajeYComentario">
+            <void property="texto">
+             <string>hola</string>
+            </void>
+            <void property="vendedor">
+             <object class="logica.Vendedor" id="Vendedor2">
+              <void property="arbolProductos">
+               <object class="estructuras.ArbolBinario"/>
+              </void>
+              <void property="correo">
+               <string>camila123</string>
+              </void>
+              <void property="direccion">
+               <string>bosques</string>
+              </void>
+              <void property="mensajes">
+               <object class="estructuras.ListaEnlazada">
+                <void property="actual">
+                 <object class="estructuras.NodoLista" id="NodoLista3">
+                  <void property="dato">
+                   <object class="logica.MensajeYComentario">
+                    <void property="texto">
+                     <string>hola</string>
+                    </void>
+                    <void property="vendedor">
+                     <object idref="Vendedor0"/>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+                <void property="longitud">
+                 <int>1</int>
+                </void>
+                <void property="primero">
+                 <object idref="NodoLista3"/>
+                </void>
+                <void property="ultimo">
+                 <object idref="NodoLista3"/>
+                </void>
+               </object>
+              </void>
+              <void property="nombre">
+               <string>camila</string>
+              </void>
+              <void property="telefono">
+               <string>123</string>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void property="longitud">
+         <int>2</int>
+        </void>
+        <void property="primero">
+         <object class="estructuras.NodoLista" id="NodoLista4">
+          <void property="dato">
+           <object class="logica.MensajeYComentario">
+            <void property="texto">
+             <string>Hola</string>
+            </void>
+            <void property="vendedor">
+             <object class="logica.Vendedor" id="Vendedor3">
+              <void property="arbolProductos">
+               <object class="estructuras.ArbolBinario"/>
+              </void>
+              <void property="correo">
+               <string>daniel@Gmail.com</string>
+              </void>
+              <void property="direccion">
+               <string>Cra 40 40 40</string>
+              </void>
+              <void property="mensajes">
+               <object class="estructuras.ListaEnlazada"/>
+              </void>
+              <void property="nombre">
+               <string>Daniel</string>
+              </void>
+              <void property="telefono">
+               <string>31600000</string>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+          <void property="enlaces">
+           <void index="0">
+            <object idref="NodoLista2"/>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void property="ultimo">
+         <object idref="NodoLista2"/>
+        </void>
+       </object>
+      </void>
+      <void property="nombre">
+       <string>Angy</string>
+      </void>
+      <void property="telefono">
+       <string>31500000</string>
+      </void>
+     </object>
+     <object class="estructuras.Nodo" id="Nodo0">
+      <void property="elemento">
+       <object idref="Vendedor0"/>
+      </void>
+      <void property="enlaces">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <object class="estructuras.Enlace">
+          <void property="destino">
+           <object class="estructuras.Nodo" id="Nodo1">
+            <void property="elemento">
+             <object idref="Vendedor3"/>
+            </void>
+            <void property="enlaces">
+             <object class="java.util.ArrayList">
+              <void method="add">
+               <object class="estructuras.Enlace">
+                <void property="destino">
+                 <object idref="Nodo0"/>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="estructuras.Enlace">
+                <void property="destino">
+                 <object class="estructuras.Nodo" id="Nodo2">
+                  <void property="elemento">
+                   <object idref="Vendedor2"/>
+                  </void>
+                  <void property="enlaces">
+                   <object class="java.util.ArrayList">
+                    <void method="add">
+                     <object class="estructuras.Enlace">
+                      <void property="destino">
+                       <object idref="Nodo0"/>
+                      </void>
+                     </object>
+                    </void>
+                    <void method="add">
+                     <object class="estructuras.Enlace">
+                      <void property="destino">
+                       <object idref="Nodo1"/>
+                      </void>
+                     </object>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="estructuras.Enlace">
+          <void property="destino">
+           <object idref="Nodo2"/>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="estructuras.Enlace">
+          <void property="destino">
+           <object class="estructuras.Nodo" id="Nodo3">
+            <void property="elemento">
+             <object idref="Vendedor1"/>
+            </void>
+            <void property="enlaces">
+             <object class="java.util.ArrayList">
+              <void method="add">
+               <object class="estructuras.Enlace">
+                <void property="destino">
+                 <object idref="Nodo0"/>
+                </void>
+               </object>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <object idref="Vendedor1"/>
+     <object idref="Nodo3"/>
+    </void>
+    <void method="put">
+     <object idref="Vendedor3"/>
+     <object idref="Nodo1"/>
+    </void>
+    <void method="put">
+     <object idref="Vendedor2"/>
+     <object idref="Nodo2"/>
+    </void>
+   </void>
+   <void property="size">
+    <int>4</int>
+   </void>
+  </void>
+ </object>
+</java>

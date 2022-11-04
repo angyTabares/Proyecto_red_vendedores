@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="249.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistas.PanelContactosPropiosController">
+   <center>
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="71.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblVendedor" layoutX="74.0" layoutY="5.0" prefHeight="18.0" prefWidth="132.0" text="Vendedor:" />
+            <Label fx:id="lblNombre" layoutX="67.0" layoutY="23.0" prefHeight="28.0" prefWidth="121.0" text="Label" />
+            <ImageView fitHeight="58.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagener/usuario1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

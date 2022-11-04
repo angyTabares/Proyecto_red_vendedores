@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_45" class="java.beans.XMLDecoder">
+ <object class="logica.Red" id="Red0">
+  <void id="Grafo0" property="red">
+   <void property="grafo">
+    <void method="put">
+     <object class="logica.Vendedor" id="Vendedor0">
+      <void property="arbolProductos">
+       <object class="estructuras.ArbolBinario">
+        <void property="peso">
+         <int>1</int>
+        </void>
+        <void property="raiz">
+         <object class="estructuras.NodoGenerico">
+          <void property="elemento">
+           <object class="logica.Producto">
+            <void property="categoria">
+             <string>d</string>
+            </void>
+            <void property="comentarios">
+             <object class="estructuras.ListaEnlazada"/>
+            </void>
+            <void property="dueño">
+             <object idref="Vendedor0"/>
+            </void>
+            <void property="fecha">
+             <string>2020-11-21</string>
+            </void>
+            <void property="hora">
+             <string>20:47:36</string>
+            </void>
+            <void property="meGusta">
+             <object class="estructuras.ListaEnlazada"/>
+            </void>
+            <void property="nombre">
+             <string>d</string>
+            </void>
+            <void property="precio">
+             <double>12.0</double>
+            </void>
+           </object>
+          </void>
+          <void property="enlaces">
+           <object class="java.util.ArrayList">
+            <void method="add">
+             <null/>
+            </void>
+            <void method="add">
+             <null/>
+            </void>
+            <void method="add">
+             <null/>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void property="correo">
+       <string>qe</string>
+      </void>
+      <void property="direccion">
+       <string>qw</string>
+      </void>
+      <void property="mensajes">
+       <object class="estructuras.ListaEnlazada"/>
+      </void>
+      <void property="nombre">
+       <string>D</string>
+      </void>
+      <void property="telefono">
+       <string>d</string>
+      </void>
+     </object>
+     <object class="estructuras.Nodo">
+      <void property="elemento">
+       <object idref="Vendedor0"/>
+      </void>
+      <void property="enlaces">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <null/>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+   </void>
+   <void property="size">
+    <int>1</int>
+   </void>
+  </void>
+ </object>
+</java>

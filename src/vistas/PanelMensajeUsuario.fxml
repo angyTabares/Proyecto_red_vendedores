@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane fx:id="panelChat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#abrirChat" prefHeight="50.0" prefWidth="107.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <ImageView fitHeight="45.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../Imagener/cliente.png" />
+         </image>
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </left>
+   <center>
+      <Label fx:id="lblNombreUsuario" onMouseClicked="#abrirChat" text="Usuarios" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Separator prefHeight="6.0" prefWidth="107.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

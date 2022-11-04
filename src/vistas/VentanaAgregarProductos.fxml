@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistas.VentanaAgregarProductosController">
+   <children>
+      <SplitPane dividerPositions="0.20351758793969849" layoutX="124.0" layoutY="51.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: White;">
+               <children>
+                  <Label layoutX="34.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 15;" text="Nombre" />
+                  <Label layoutX="34.0" layoutY="42.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 15;" text="Categoria" />
+                  <Label layoutX="300.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 15;" text="Fecha" />
+                  <Label layoutX="300.0" layoutY="42.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 15;" text="Precio" />
+                  <TextField fx:id="txtNombre" layoutX="116.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Nombre" style="-fx-border-color: #05011B;" />
+                  <TextField fx:id="txtCategoria" layoutX="116.0" layoutY="40.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Categoria" style="-fx-border-color: #05011B;" />
+                  <TextField fx:id="txtPrecio" layoutX="349.0" layoutY="40.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="149.0" promptText="Precio" style="-fx-border-color: #05011B;" />
+                  <DatePicker fx:id="calendario" layoutX="349.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="149.0" promptText="DD/MM/YYYY" style="-fx-border-color: #05011B;" />
+                  <ImageView fx:id="agregarProducto" fitHeight="56.0" fitWidth="96.0" layoutX="518.0" layoutY="9.0" nodeOrientation="INHERIT" onMouseClicked="#agregarProducto" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagener/etiqueta.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="600.0">
+               <children>
+                  <BorderPane layoutX="170.0" layoutY="39.0" prefHeight="314.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <GridPane prefHeight="47.0" prefWidth="598.0" BorderPane.alignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #F1C40F;">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 22; -fx-font-family: Geneve;" text="Mis productos" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #F1C40F;" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label style="-fx-font-size: 22; -fx-font-family: Geneve;" text="Productos  de Contactos" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                     </top>
+                     <center>
+                        <GridPane prefHeight="259.0" prefWidth="598.0" BorderPane.alignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ListView fx:id="listMisProductos" focusTraversable="false" prefHeight="239.0" prefWidth="279.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </ListView>
+                              <ListView fx:id="listProductosContactos" focusTraversable="false" prefHeight="239.0" prefWidth="279.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </ListView>
+                           </children>
+                        </GridPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
